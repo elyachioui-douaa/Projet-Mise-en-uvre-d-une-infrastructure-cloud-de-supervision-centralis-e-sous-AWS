@@ -68,9 +68,28 @@ Année universitaire 2025/2026
 
 ## 6. Installation du projet
 
+## 6. Installation du projet
+
 ### 6.1 Clonage du dépôt
 ```bash
 git clone https://github.com/elyachioui-douaa/Projet-Mise-en-uvre-d-une-infrastructure-cloud-de-supervision-centralis-e-sous-AWS.git
 cd Projet-Mise-en-uvre-d-une-infrastructure-cloud-de-supervision-centralis-e-sous-AWS
+
+### 6.2 Déploiement avec Docker
+
+Le déploiement de l’infrastructure de supervision est réalisé à l’aide de Docker
+et Docker Compose afin de simplifier l’installation, garantir la portabilité
+et automatiser le lancement des services.
+
+Les services déployés sont :
+- Une base de données MySQL
+- Un serveur Zabbix
+- Une interface Web Zabbix
+
+#### Lancement des services Docker
+```bash
+cd docker
+docker-compose up -d
+
 
 
